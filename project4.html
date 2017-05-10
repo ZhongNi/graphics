@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>Project 4</title>
+<meta name="keywords" content="Wedding,��������ģ��,����ģ��,������վģ��,���˽�,���˽ڸ�����վģ��" />
+<meta name="description" content="����һ���й�Wedding��html5 css3 ��վģ�������ڸ��ֻ�������" />
+<link href="css/styles1.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="js/modernizr.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+ <nav id="nav">
+   <ul>
+    <li><a href="/">Homepage</a></li>
+   </ul>
+  <script src="js/silder.js"></script><!--��ȡ��ǰҳ���� ������ʾ����-->
+ </nav>
+ </header>
+ <div class="mainContent">
+    <!--<div class="blogitem">-->
+      <article>
+        <h2 class="title"><a href="/">The Logo Of Shandong Univerdity</a></h2>
+        <ul class="text">
+          <p>In this experiment, the main algorithm are Breseman and scan line filling algorithm.</p>
+          <p>Bresenham's line algorithm is an algorithm that determines the points of an n-dimensional raster that 
+          	should be selected in order to form a close approximation to a straight line between two points. During 
+          	the class, we had basicly learned about it. The fake code can be expressed as follows,where the (x0,y0)is 
+          	the startpoint and (x1,y1) is the end point of the line. Once we know the two points, we can easily draw
+          	 it out.</p>
+          <p class="textimg"><img src="images/4_1.png"></p>
+          <p>As to the second algrithom---scan line seed filling algorithm it no longer recursively processes 
+          	the adjacent points of "4-Unicom" and "8-Unicom", but rather processes the "4-link" and the "4-link" 
+          	by padding the pixel segment along the horizontal scan line "8-Unicom" adjacent points. In this process, 
+          	it is only necessary to press the starting point position of each horizontal pixel segment onto a special 
+          	stack without pressing all the adjacent points that are not yet processed around the current position onto 
+          	the stack, so that we can save stack space. </p>
+          <p class="textimg"><img src="images/logo.png"></p>
+          <p>After finished the above two methods, we need to measure the points of the logo. 
+          	Once we draw it out, then excute the scan line seed filling algorithm .In my code, the seed_fill methods needs two arguments-----the 
+          	start point position (startx,starty).I initialized the boder color as red, and establish a stack to set seed points, 
+          we start the filling process.</p>
+          <!--<p></p>
+          <p>�����飬�����飬��һϮ�����·��顱���ٲ�һ��İ�ϻ����������顣</p>
+          <p>�������ӣ���������İ�ϻ�����</p>-->
+        </ul>
+        <div class="textfoot">
+          <a href="/">Thanks for your support</a>
+      <!--  </div>-->
+      </article> 
+    </div>
+ </div>-->
+<footer>
+   <div class="footavatar">
+     <img src="images/photo.jpg" class="footphoto">
+     <ul class="footinfo">
+       <p class="fname"><a href="/dancesmile" >Hou Zhongni</a>  </p>
+       <!--<p class="finfo"></p>
+       <p>�־ӣ��Ĵ��ɶ�</p></ul>-->
+   </div>
+   <div class="Copyright">
+     <ul>
+       <a href="/">Course page</a><a href="http://sdu.edu.cn">Shandong University</a>
+     </ul>
+     <p>Design by Zhongni</p>
+   </div>
+ </footer>
+</body>
+</html>
