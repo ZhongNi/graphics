@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>Project 4</title>
+<meta name="keywords" content="Wedding,��������ģ��,����ģ��,������վģ��,���˽�,���˽ڸ�����վģ��" />
+<meta name="description" content="����һ���й�Wedding��html5 css3 ��վģ�������ڸ��ֻ�������" />
+<link href="css/styles1.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="js/modernizr.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+ <nav id="nav">
+   <ul>
+    <li><a href="/">Homepage</a></li>
+   </ul>
+  <script src="js/silder.js"></script><!--��ȡ��ǰҳ���� ������ʾ����-->
+ </nav>
+ </header>
+ <div class="mainContent">
+    <!--<div class="blogitem">-->
+      <article>
+        <h2 class="title"><a href="/">The Logo Of Shandong Univerdity</a></h2>
+        <ul class="text">
+          <p>&nbsp;&nbsp;In this experiment, we need to implement raytracing using opengl and C++</p>
+          <p>&nbsp;&nbsp;Similar to the third experiment, I don't change too much of the source code.</p>
+          <p class="textimg"><img src="images/5_0.png"></p>
+          <p>&nbsp;&nbsp;When a ray hits a surface, it can generate up to three new types of rays: reflection, 
+          	refraction, and shadow.A reflection ray is traced in the mirror-reflection direction. 
+          	The closest object it intersects is what will be seen in the reflection. Refraction rays 
+          	traveling through transparent material work similarly, with the addition that a refractive 
+          	ray could be entering or exiting a material. A shadow ray is traced toward each light. If 
+          	any opaque object is found between the surface and the light, the surface is in shadow and 
+          	the light does not illuminate it. The ray tracing added more realism to ray traced images </p>
+          <p>&nbsp;&nbsp; To acculate the speed of rendering , I take the adaptive depth control,which means that we stop generating reflected/transmitted rays 
+          	when the computed intensity becomes less than a certain threshold. We must always set a certain maximum depth or else the program would generate an infinite 
+          	number of rays. But it is not always necessary to go to the maximum depth if the surfaces are not highly reflective. To test for this the ray tracer must 
+          	compute and keep the product of the global and reflection coefficients as the rays are traced.Example: let Kr = 0.5 for a set of surfaces. Then from the 
+          	first surface the maximum contribution is 0.5, for the reflection from the second: 0.5 * 0.5 = 0.25, the third: 0.25 * 0.5 = 0.125, the fourth: 0.125 * 0.5 = 0.0625, 
+          	the fifth: 0.0625 * 0.5 = 0.03125, etc. In addition we might implement a distance attenuation factor such as 1/D2, which would also decrease the intensity contribution.
+            </p>
+          <p class="textimg"></p>
+          <p>&nbsp;&nbsp;To acculate the speed of rendering, I enclose groups of objects in sets of hierarchical bounding volumes 
+          	and first test for intersection with the bounding volume, and then only 
+          	if there is an intersection, against the objects enclosed by the volume.Bounding volumes should
+          	 be easy to test for intersection, for example a sphere or box (slab). The best bounding volume
+          	  will be determined by the shape of the underlying object or objects. For example, if the 
+          	  objects are long and thin then a sphere will enclose mainly empty space and a box is much 
+          	  better. Boxes are also easier for hierarchical bounding volumes.Note that using a 
+          	  hierarchical system like this (assuming it is done carefully) changes the intersection 
+          	  computational time from a linear dependence on the number of objects to something between 
+          	  linear and a logarithmic dependence. This is because, for a perfect case, each intersection 
+          	  test would divide the possibilities by two, and  a binary tree type structure is needed. 
+          	  .
+</p>
+          <!--<p></p>
+          <p>�����飬�����飬��һϮ�����·��顱���ٲ�һ��İ�ϻ����������顣</p>
+          <p>�������ӣ���������İ�ϻ�����</p>-->
+        </ul>
+        <div class="textfoot">
+          <a href="/">Thanks for your support</a>
+      <!--  </div>-->
+      </article> 
+    </div>
+ </div>-->
+<footer>
+   <div class="footavatar">
+     <img src="images/photo.jpg" class="footphoto">
+     <ul class="footinfo">
+       <p class="fname"><a href="/dancesmile" >Hou Zhongni</a>  </p>
+       <!--<p class="finfo"></p>
+       <p>�־ӣ��Ĵ��ɶ�</p></ul>-->
+   </div>
+   <div class="Copyright">
+     <ul>
+       <a href="/">Course page</a><a href="http://sdu.edu.cn">Shandong University</a>
+     </ul>
+     <p>Design by Zhongni</p>
+   </div>
+ </footer>
+</body>
+</html>
